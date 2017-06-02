@@ -91,6 +91,12 @@ ENV/
 .spyderproject
 .spyproject
 
+# PyCharm
+.idea
+
+# MacOS
+.DS_Store
+
 # Rope project settings
 .ropeproject
 
