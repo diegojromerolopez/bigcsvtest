@@ -123,7 +123,7 @@ class Reader(object):
 
         worker = CsvWorker(self.file_name)
         field_name_sum = worker.reduce_field(field_name=field_name, operation=lambda x, y: x+float(y))
-
+        self.num_lines = worker.num_lines
         return float(field_name_sum) / float(worker.num_lines)
 
     def start(self):
